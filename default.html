@@ -189,6 +189,57 @@ acct:reiver@mastodon.social
 		<p>
 			<strong>Now we are ready to get to why obj-URI is needed.</strong>
 		</p>
+		<p>
+			An account often has content and other types of objects associated with it.
+			For example, on the Fediverse, user accounts have their <em>notes</em>, their <em>photos</em>, their <em>video</em>, etc.
+		</p>
+		<p>
+			Is there a way to identify those objects without talking about where it is stored‽
+		</p>
+		<p>
+			A URL like the following tells me where it is stored:
+		</p>
+		<figure>
+			<pre><code>
+https://example.com/@bahmankas/019ee1f3-d989-7012-ad0a-55b87243a43f
+			</code></pre>
+		</fiture>
+		<p>
+			But, on the Fediverse, content is replicated across many servers.
+			So, it is at that URL, but it is also at these URLs, too:
+		</p>
+		<figure>
+			<pre><code>
+https://mastodon.example/@bahmankas@example.com/1352173639747
+
+https://misskey.example/note/9nx7z3f8k20
+			</code></pre>
+		</figure>
+		<p>
+			What we need is something that collectively represents all these copies at the same time.
+			What we need is something that represents the content rather than the location.
+			What we need is something like this:
+		</p>
+		<figure>
+			<pre><code>
+acct:bahmankas@example.com/019ee1f3-d989-7012-ad0a-55b87243a43f
+			</code></pre>
+		</figure>
+		<p>
+			But, that is <strong>not</strong> a valid <strong>acct-URI</strong>.
+		</p>
+		<p>
+			So, let's instead have something that is just like that, but isn't a <strong>acct-URI</strong>.
+			Let's call it a <strong>obj-URI</strong>.
+		</p>
+		<figure>
+			<pre><code>
+obj:bahmankas@example.com/019ee1f3-d989-7012-ad0a-55b87243a43f
+			</code></pre>
+		</figure>
+		<p>
+			And, just to keep things modern, let's say that these <strong>obj-URI</strong> are actually <strong>IRI</strong> despite having “URI” in the name.
+		</p>
 	</section>
 	<section>
 		<h1>See Also</h1>

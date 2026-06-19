@@ -20,7 +20,7 @@
 		<hgroup>
 			<h1 property="headline">obj-URI</h1>
 			<p>
-				obj-URI are acct-URI like URIs for content.
+				obj-URI are acct-URI like URIs for content
 			</p>
 		</hgroup>
 		<p>
@@ -28,22 +28,71 @@
 		</p>
 	</header>
 	<p>
-		It is probably easiest to understand the need for <strong>obj-URI</strong> by talk about <strong>acct-URI</strong>.
+		It is probably easiest to understand the need for <strong>obj-URI</strong> by talking about <strong>acct-URI</strong>.
 	</p>
-	<p>
-		<strong>acct-URI</strong> are a way of representing accounts.
-		The “acct” in “acct-URI” is short for “account”.
-		Most of the time these accounts are (human) user accounts.
-		But, an account can also represent:
-		an application,
-		a service,
-		a group of people,
-		etc, in addition to representing a single person.
-	</p>
-	<p>
-		The reason <strong>acct-URI</strong> exist is — is to have a way of representing an accout as a URI.
-		The reason being — there are a lot of Web and Internet technologies that expect a URI.
-	</p>
+	<section>
+		<h1>acct-URI</h1>
+		<p>
+			<strong>acct-URI</strong> are a way of representing accounts.
+			The “acct” in “acct-URI” is short for “account”.
+			Most of the time these accounts are (human) user accounts.
+			But, an account can also represent:
+			a bot,
+			a service,
+			a group of people,
+			etc, in addition to representing a single person.
+		</p>
+		<p>
+			The reason <strong>acct-URI</strong> exist is — is to have a way of representing an accout as a URI.
+			The reason being — there are a lot of Web and Internet technologies that expect a URI.
+		</p>
+		<p>
+			For example, let's say there is a web applcation at the Internet domain: <code>example.com</code>.
+			And, for example, let's say the represent their users using UUIDv7.
+			For example:
+		</p>
+		<table>
+			<thead>
+				<tr>
+					<th>
+						Name
+					</th>
+					<th>
+						User ID
+					</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>
+						Bahman Kas
+					</td>
+					<td>
+						<code>019ee1f3-d989-7012-ad0a-55b87243a43f</code>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Jane Doe
+					</td>
+					<td>
+						<code>0192324e-1234-7e0b-8d19-edd5a5fe1473</code>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Joe Blow
+					</td>
+					<td>
+						<code>019ee1f2-9273-7e0b-8d19-edd5a5fe1473</code>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		<p>
+			Those user IDs are <strong>not</strong> URIs.
+		</p>
+	</section>
 	<section>
 		<h1>See Also</h1>
 		<ul>

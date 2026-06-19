@@ -154,6 +154,43 @@
 		</table>
 	</section>
 	<section>
+		<h1>Fediverse ID</h1>
+		<p>
+			These <strong>acct-URI</strong> are used alongside <strong>ActivityPub</strong>.
+		</p>
+		<p>
+			On the <strong>Social Web</strong> and <strong>Fediverse</strong>, users are identified by <strong>Fediverse ID</strong>.
+			(A <strong>Fediverse ID</strong> is also sometimes called a <strong>Fediverse address</strong>.)
+		</p>
+		<p>
+			<strong>Fediverse ID</strong> look like this:
+		</p>
+		<figure>
+			<pre><code>
+@reiver@mastodon.social
+			</code></pre>
+		</figure>
+		<p>
+			That is <strong>not</strong> a URI.
+			So, we use <strong>acct-URI</strong> to turn it into a URI.
+			For example:
+		</p>
+		<figure>
+			<pre><code>
+acct:reiver@mastodon.social
+			</code></pre>
+		</figure>
+		<p>
+			And then, on the <strong>Social Web</strong> and <strong>Fediverse</strong>, WebFinger is used to <em>resolve</em> that <strong>acct-URI</strong> into an actor URL (which tends to be an HTTP/HTTPS URL).
+		</p>
+	</section>
+	<section>
+		<h1>obj-URI</h1>
+		<p>
+			<strong>Now we are ready to get to why obj-URI is needed.</strong>
+		</p>
+	</section>
+	<section>
 		<h1>See Also</h1>
 		<ul>
 			<li>

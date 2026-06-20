@@ -302,6 +302,22 @@ obj:bahmankas@example.com/019ee1f3-d989-7012-ad0a-55b87243a43f
 		<p>
 			We could now use <strong>WebFinger</strong> to <em>resolve</em> an <strong>obj-URI</strong> to a location.
 		</p>
+		<p>
+			For example, the <strong>obj-URI</strong>:
+		</p>
+		<figure>
+			<pre><code>
+obj:bahmankas@example.com/019ee1f3-d989-7012-ad0a-55b87243a43f
+			</code></pre>
+		</figure>
+		<p>
+			Could be resolved using <strong>WebFinger</strong> using the URL:
+		</p>
+		<figure>
+			<pre><code>
+https://example.com/.well-known/webfinger?resource=obj:bahmankas@example.com/019ee1f3-d989-7012-ad0a-55b87243a43f
+			</code></pre>
+		</figure>
 	</section>
 	<section>
 		<h1>Specification</h1>

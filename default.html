@@ -20,7 +20,10 @@
 		<hgroup>
 			<h1 property="headline">obj-URI</h1>
 			<p>
-				obj-URI are acct-URI like URIs for content
+				obj-URI look like acct-URI but also have a path.
+			</p>
+			<p>
+				obj-URI are like acct-URI but for content.
 			</p>
 		</hgroup>
 		<p>
@@ -36,7 +39,35 @@ obj:bahmankas@example.com/path/to/something
 		</code></pre>
 	</figure>
 	<p>
-		An <strong>obj-URI</strong> looks a lot like a <strong>acct-URI</strong> with a <strong>path</strong>.
+		I.e.,:
+	</p>
+	<figure>
+		<pre><code>
+objURI   = "obj" ":" userpart "@" host path-absolute
+userpart =  1*( unreserved / pct-encoded / sub-delims )
+		</code></pre>
+		<figcaption>
+			The <abbr title="Augmented Backus-Naur Form)">ABNF</abbr> definition of an <strong>obj-URI</strong>.
+		</figcaption>
+	</figure>
+	<p>
+		Note that there is also a <strong>obj-IRI</strong>, too, that has the definition:
+	</p>
+	<figure>
+		<pre><code>
+objURI   = "obj" ":" userpart "@" ihost ipath-absolute
+userpart =  1*( iunreserved / pct-encoded / sub-delims )
+		</code></pre>
+		<figcaption>
+			The <abbr title="Augmented Backus-Naur Form)">ABNF</abbr> definition of an <strong>obj-IRI</strong>.
+			In comparision to the <abbr title="Augmented Backus-Naur Form)">ABNF</abbr> definition of an <strong>obj-URI</strong>, an <strong>obj-IRI</strong> uses <code>ihost</code> rather than <code>host</code>, uses <code>ipath-absolute</code> rather than <code>path-absolute</code>, and uses <code>iunreserved</code> rather than <code>iunreserved</code>.
+		</figcaption>
+	</figure>
+	<p>
+		An <strong>obj-URI</strong> (and an <strong>obj-IRI</strong>) look a lot like a <strong>acct-URI</strong> with a <strong>path</strong>.
+	</p>
+	<p>
+		An <strong>obj-URI</strong> (and an <strong>obj-IRI</strong>) are <strong>acct-URI</strong> like URI (and IRI) but for content and other objects.
 	</p>
 	<p>
 		It is probably easiest to understand the need for <strong>obj-URI</strong> by first talking about <strong>acct-URI</strong>.
